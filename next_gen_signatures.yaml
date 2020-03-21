@@ -1,0 +1,79 @@
+---
+version: 1
+identity:
+  correlation_id: 6E02AF2E-A08A-4525-9494-DC3EC6BC2006
+  original_filename: debian-10.3.0-amd64-DVD-1.iso
+  length: 3972317184
+  origin:
+    scheme: https
+    url: https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-10.3.0-amd64-DVD-1.iso
+    tls:
+      root_ca: # Root CA Pinning
+  hashes:
+    - algorithm: SHA2-512
+      hash: |
+        69cecf00bf0f51bb3e82104fe8071c04de2c6808b767060b8caf5ab9e241e6a0
+        f3585eec01179cd27a1e69f179511025f251bf25b7b8e6baf2e68981f9527267
+    - algorithm: SHA2-512
+      salt: |
+        96bb7118a1d1afdc64e0c88da2db5f19289a048e5c285d1568e813e95e3499a2
+        ae0d8342a755a22cc88a7e0825cd121d641ae69971aa7ae51aaebede9b11d7a6
+      hash: |
+        68df4c825ab224f3146dade366d5f2eb7a43fc49dec636995e7827fcd063d34b
+        20f7a79bb4e9439a17d3bf371e1d4a3c6384860795f006fdbea4bd4210b7a63e
+    - algorithm: SHA2-512
+      salt: |
+      tweeks:
+        - signer_keygrip
+        - signer_public_key
+        - corelation_id
+      hash: |
+  metadata:
+    build_server: nyc01.build.debian.com
+signer:
+  keygrip: 544CB2D6466CF4C8330168A2371AF3363276B672
+  keyserver: hkps://keys.openpgp.org
+  subkey: D9F8F54830F45097DB24E5C0B77CE3BD3E9B01F6
+  reply_to:
+    keygrip: 5EB35C47B97AC11F551DB287201C31294D5843EA
+  public_key: | # Including a direct public key is optional
+    ----- BEGIN PUBLIC KEY -----
+    SOME VALUE
+    ----- END PUBLIC KEY -----
+  vouchers:
+    - keygrip: 57930DAB0B86B067
+      keyserver: hkp://pool.mit.edu
+      signature: |
+        ----- BEGIN PUBLIC KEY SIGNATURE -----
+        ----- END PUBLIC KEY SIGNATURE -----
+  attestation:
+    # Any required attestation like key-generated-on-device or FIPS120
+validity:
+  not_before: 2020-03-16 16:03:11Z
+  not_after: 2025-03-16 16:03:11Z
+revocation:
+  online_status: <some_oscp_like_service> # TODO
+  revocation_challenge:
+    b452fde102b77017cca4e3d7b13cbe3ad1c6fae308ad9cea97cf971f04c830f5
+cosigners:
+  keygrip: 9C6437CD1B7B029D093349EA1E5276729197B5F9
+  public_key:
+counersigners:
+  - encapsulation_id: 1CD183E2-758B-4FFE-8BDB-15281D4357D8
+    keygrip: 5E61DB352D0C34948F034067938FAC6D858E487C
+    keyserver:
+transparency:
+  # Certifiate Transparency Log like location
+trust:
+  keyservers:
+
+  keys:
+    -
+    -
+    -
+metadata: # Non standardiszed values and attributes
+  debain:
+    release_name: buster
+    release_version: 10.3
+  chunklist:
+    # Some specification that allows incremential validation
