@@ -1,0 +1,2 @@
+# xsig
+Extensible GPG Signatures
